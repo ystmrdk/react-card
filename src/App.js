@@ -1,49 +1,17 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
-import { Layout, Menu, Breadcrumb } from "antd";
-import { Row, Col } from 'antd';
+import { Layout, Menu, Breadcrumb } from "antd";  
 import {
   UserOutlined,
   LaptopOutlined,
   NotificationOutlined
 } from "@ant-design/icons";
-import {
-  EditOutlined,
-  EllipsisOutlined,
-  SettingOutlined
-} from "@ant-design/icons";
-import { Card, Avatar } from "antd";
-import { isiKartu } from "./module/Kertu";
-
-const { Meta } = Card;
+import Test from "./modules/statefull-component";
+import LandingComp from "./modules/landing-component.jsx";
 
 const { SubMenu } = Menu;
 const { Header, Content, Footer, Sider } = Layout;
 
-const cardData = [
-  {
-    nama: "yasta",
-    nim: "18/431740/SV/15711",
-    job: "nganggur"
-  },
-  {
-    nama: "dhika",
-    job: "kontaktur"
-  },
-  {
-    nama: "kalili",
-    job: "diplomat"
-  },
-  {
-    nama: "vava",
-    job: "psycholo"
-  },
-  {
-    nama: "vana",
-    job: "farmako"
-  }
-];
 
 function Kartu() {
   return (
@@ -56,9 +24,9 @@ function Kartu() {
           defaultSelectedKeys={["2"]}
           style={{ lineHeight: "64px" }}
         >
-          <Menu.Item key="1">nav 1</Menu.Item>
-          <Menu.Item key="2">nav 2</Menu.Item>
-          <Menu.Item key="3">nav 3</Menu.Item>
+          <Menu.Item key="1">Card</Menu.Item>
+          <Menu.Item key="2">CreateCard</Menu.Item>
+          <Menu.Item key="3"></Menu.Item>
         </Menu>
       </Header>
       <Content style={{ padding: "0 50px" }}>
@@ -123,39 +91,13 @@ function Kartu() {
             </Menu>
           </Sider>
           <Content style={{ padding: "0 24px", minHeight: 280 }}>
-          <Row gutter={16}>
-        <Col span={8}>
-          {cardData.map(data => (
-            <Card
-              style={{ width: 300 }}
-              cover={
-                <img
-                  alt="example"
-                  src="https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png"
-                />
-              }
-              actions={[
-                <SettingOutlined key="setting" />,
-                <EditOutlined key="edit" />,
-                <EllipsisOutlined key="ellipsis" />
-              ]}
-            >
-              <Meta
-                avatar={
-                  <Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" />
-                }
-                title={data.nama}
-                description={data.job}
-              />
-            </Card>
-          ))}
-        </Col>
-      </Row>
+           <LandingComp/>
+           <Test/>
           </Content>
         </Layout>
       </Content>
       <Footer style={{ textAlign: "center" }}>
-        Ant Design ©2018 Created by Ant UED
+        
       </Footer>
     </Layout>
   );

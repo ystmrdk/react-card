@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Kartu from './App';
+import Main from './App';
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<Kartu />, document.querySelector('.card'));
+ReactDOM.render(<Main />, document.querySelector('.card'));
 
 
 // If you want your app to work offline and load faster, you can change
