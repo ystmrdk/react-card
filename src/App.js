@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import { Layout, Menu, Breadcrumb } from "antd";  
+import { Layout, Menu, Breadcrumb } from "antd";
 import {
   UserOutlined,
   LaptopOutlined,
@@ -11,7 +11,6 @@ import LandingComp from "./modules/landing-component.jsx";
 
 const { SubMenu } = Menu;
 const { Header, Content, Footer, Sider } = Layout;
-
 
 function Kartu() {
   return (
@@ -91,13 +90,12 @@ function Kartu() {
             </Menu>
           </Sider>
           <Content style={{ padding: "0 24px", minHeight: 280 }}>
-           <LandingComp/>
-           <Test/>
+            <LandingComp />
           </Content>
         </Layout>
       </Content>
       <Footer style={{ textAlign: "center" }}>
-        
+        <Test />
       </Footer>
     </Layout>
   );
