@@ -17,7 +17,7 @@ class LandingComp extends React.Component {
             <MyComp nama="Mardika" job="Pengacara" />
           </li>
         </ul>
-      </div>
+      </div> 
     );
   }
 }
