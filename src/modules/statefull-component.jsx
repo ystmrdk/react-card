@@ -7,15 +7,14 @@ class Test extends React.Component {
       data: [],
       temp: null,
       city: null,
-      temp: null,
-      weather: null,
+      weather: null
     };
   }
 
   async componentDidMount() {
     const url =
       "https://api.openweathermap.org/data/2.5/weather?q=Sleman&appid=69db624d6768601eeb046d6a847ee587&lang=id&units=metric";
-    const response = await fetch(url)
+    await fetch(url)
       .then(res => res.json())
       .then(
         result => {
@@ -23,7 +22,7 @@ class Test extends React.Component {
             isLoaded: true,
             city: result.name,
             weather: result.weather[0].description,
-            temp: result.main.temp,
+            temp: result.main.temp
           });
           console.log(result);
         },
@@ -38,8 +37,9 @@ class Test extends React.Component {
         }
       );
   }
+  
   render() {
-    const { error, isLoaded, city ,temp ,weather } = this.state;
+    const { error, isLoaded, city, temp, weather } = this.state;
     if (error) {
       return <div>Error: {error.message}</div>;
     } else if (!isLoaded) {
@@ -48,7 +48,9 @@ class Test extends React.Component {
       return (
         <div>
           <h1>{city}</h1>
-      <h2>{temp} {weather}</h2>
+          <h2>
+            {temp} {weather}
+          </h2>
         </div>
       );
     }
