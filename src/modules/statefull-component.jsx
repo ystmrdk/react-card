@@ -1,4 +1,5 @@
 import React from "react";
+import { init } from 'ityped'
 
 class Test extends React.Component {
   constructor(props) {
@@ -36,6 +37,7 @@ class Test extends React.Component {
           });
         }
       );
+     
   }
   
   render() {
@@ -46,7 +48,7 @@ class Test extends React.Component {
       return <div>Loading...</div>;
     } else {
       return (
-        <div>
+        <div id = "myElement">
           <h1>{city}</h1>
           <h2>
             {temp} {weather}
