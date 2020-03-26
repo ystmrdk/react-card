@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "76674e5287850bdc38f041fd15803b38",
+    "revision": "ab6ae95ac447ae6c94d324bf87b500a7",
     "url": "/Web3-React/index.html"
   },
   {
-    "revision": "ead67898a7f336bd4de7",
+    "revision": "0b5a1ec186a26cead7da",
     "url": "/Web3-React/static/css/2.61ee4d8b.chunk.css"
   },
   {
-    "revision": "1befc1b018bca1e1e1a3",
+    "revision": "548359ab6699125faf2a",
     "url": "/Web3-React/static/css/main.fe920c0d.chunk.css"
   },
   {
-    "revision": "ead67898a7f336bd4de7",
-    "url": "/Web3-React/static/js/2.d001a0cb.chunk.js"
+    "revision": "0b5a1ec186a26cead7da",
+    "url": "/Web3-React/static/js/2.3c6675ef.chunk.js"
   },
   {
     "revision": "49c45e15b22906ea61e3b3085d227f58",
-    "url": "/Web3-React/static/js/2.d001a0cb.chunk.js.LICENSE.txt"
+    "url": "/Web3-React/static/js/2.3c6675ef.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "1befc1b018bca1e1e1a3",
-    "url": "/Web3-React/static/js/main.debd0a7d.chunk.js"
+    "revision": "548359ab6699125faf2a",
+    "url": "/Web3-React/static/js/main.fda07025.chunk.js"
   },
   {
     "revision": "8dd33c8441dfe9ebb497",
@@ -90,5 +90,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "ef60a4f6c25ef7f39f2d25a748dbecfe",
     "url": "/Web3-React/static/media/outline-icons.ef60a4f6.woff"
+  },
+  {
+    "revision": "a31a2ccc86dbc9c1c313fca6d048a276",
+    "url": "/Web3-React/static/media/pose-mask.a31a2ccc.png"
   }
 ]);
